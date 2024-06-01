@@ -1,0 +1,29 @@
+    else if (x == 20)
+    {
+        gotoxy(x, y);
+        printf("*");
+        gotoxy(x - 2, y + 1);
+        printf("***");
+        gotoxy(x - 1, y + 2);
+        printf("* ");
+    }
+    else if (x == 19)
+    {
+        gotoxy(x, y);
+        printf("*");
+        gotoxy(x - 2, y + 1);
+        printf("****");
+        gotoxy(x - 1, y + 2);
+        printf("* *");
+    }
+    else
+    {
+        gotoxy(x, y);
+        printf("*");
+        gotoxy(x - 2, y + 1);
+        printf("*****");
+        gotoxy(x - 1, y + 2);
+        printf("* *");
+    }
+    return;
+}
