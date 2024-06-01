@@ -1,0 +1,10 @@
+nodeptr_t generate_bullet(nodeptr_t listnode, int x, int y)
+{
+    nodeptr_t newbullet = nullptr; //
+    newbullet = (nodeptr_t)malloc(sizeof(node_t));
+    newbullet->next = listnode->next;
+    newbullet->x = x;
+    newbullet->y = y;
+    listnode->next = newbullet;
+    return listnode;
+}
