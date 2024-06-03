@@ -1,0 +1,11 @@
+this->welcome=welcome;
+if(welcome != 0){
+  welcome->show();
+  timerInit=new QTimer();
+  timerInit->setInterval(100);
+  timerInit->setSingleShot(true);//设置Timer只触发一次
+  timerInit->start();
+  connect(timerInit, SIGNAL(timeout()), SLOT(init()));
+}else{
+  init();
+}
